@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>替换某固定文字的值</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th class="th">1</th>
+			<th class="th">2</th>
+			<th class="th">3</th>
+			<th class="th">4</th>
+			<th class="th">5</th>
+		</tr>
+		<tbody class="tbody">
+			<tr>
+				<th class="th">1111</th>
+				<th class="th">2222</th>
+				<th class="th">3333</th>
+				<th class="th">4444</th>
+				<th class="th">5555</th>
+			</tr>
+			<tr>
+				<th class="th">1111</th>
+				<th class="th">2222</th>
+				<th class="th">3333</th>
+				<th class="th">4444</th>
+				<th class="th">5555</th>
+			</tr>
+			<tr>
+				<th class="th">1111</th>
+				<th class="th">2222</th>
+				<th class="th">3333</th>
+				<th class="th">4444</th>
+				<th class="th">5555</th>
+			</tr>
+			<tr>
+				<th class="th">1111</th>
+				<th class="th">2222</th>
+				<th class="th">3333</th>
+				<th class="th">4444</th>
+				<th class="th">5555</th>
+			</tr>
+		</tbody>
+	</table>
+</body>
+<script src="jquery-1.9.1.min.js"></script>
+<script>
+$('.tbody .th').each(function(i,v){
+    if($(v).html()=='4444'){
+    	$(this).html('我');
+    }else if($(v).html()=='5555'){
+    	$(this).html('她');
+    }
+})
+
+
+	
+
+	/*$('.tbody .th').each(function(i,v){
+		if($(v).html()=='4444'){
+			$(this).html("是我");
+		}else if($(v).html()=='5555'){
+            $(this).html("是他");
+		}
+	})*/
+	
+
+
+</script>
+</html>
